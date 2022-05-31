@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Портфоліо</title>
+  </head>
+  <body>
+    <!--Header-->
+    <header class="header">
+      <a href="index.html" lang="en" class="logo"
+        ><span class="logo-blue">Web</span>Studio</a
+      >
+      <nav class="nav">
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="./index.html" class="sources">Студия</a>
+          </li>
+          <li class="nav_item">
+            <a href="./portfolio.html" class="sources current">Портфолио</a>
+          </li>
+          <li class="nav_item"><a href="#" class="sources">Контакты</a></li>
+        </ul>
+      </nav>
+      <ul class="contact-info">
+        <li class="contact-item">
+          <a href="mailto:info@devstudio.com" class="mail"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="contact-item">
+          <a href="tel:+380961111111" class="phone">+38 096 111 11 11</a>
+        </li>
+      </ul>
+    </header>
+    <div class="head-border"></div>
+    <!--Main contect-->
+    <main class="portfolio-section">
+      <h1 hidden>Menu</h1>
+      <ul class="filter">
+        <li class="filter-item">
+          <button type="button" class="filter-btn active" id="all">Все</button>
+        </li>
+        <li class="filter-item">
+          <button type="button" class="filter-btn" id="webs">Веб-сайты</button>
+        </li>
+        <li class="filter-item">
+          <button type="button" class="filter-btn" id="apps">Приложения</button>
+        </li>
+        <li class="filter-item">
+          <button type="button" class="filter-btn" id="design">Дизайн</button>
+        </li>
+        <li class="filter-item">
+          <button type="button" class="filter-btn" id="marketing">
+            Маркетинг
+          </button>
+        </li>
+      </ul>
+      <ul class="categories-list">
+        <li class="categorie-item web">
+          <img
+            src="./images/web-site1.jpg"
+            alt="Веб-сайт Технокряк"
+            width="370"
+          />
+          <h2 class="categorie-title">Технокряк</h2>
+          <p class="categorie-name">Веб-сайт</p>
+          <p class="description">
+            Ресурс предлагает комплексные предложения с разным уровнем
+            функционала и сервисов. Все это позволит посетителю получить
+            исчерпывающие сведения о компании или частном лице.
+          </p>
+        </li>
+        <li class="categorie-item des">
+          <img
+            src="./images/design1.jpg"
+            alt="Постер New Orlean vs Golden Star"
+            width="370"
+          />
+          <h2 class="categorie-title">Постер New Orlean vs Golden Star</h2>
+          <p class="categorie-name">Дизайн</p>
+        </li>
+        <li class="categorie-item app">
+          <img
+            src="./images/apps1.jpg"
+            alt="Приложение для ресторана Seafood"
+            width="370"
+          />
+          <h2 class="categorie-title">Ресторан Seafood</h2>
+          <p class="categorie-name">Приложение</p>
+        </li>
+        <li class="categorie-item mark">
+          <img
+            src="./images/marketing1.jpg"
+            alt="Маркетинговый проект Prime"
+            width="370"
+          />
+          <h2 class="categorie-title">Проект Prime</h2>
+          <p class="categorie-name">Маркетинг</p>
+        </li>
+        <li class="categorie-item app">
+          <img src="./images/apps2.jpg" alt="Приложение Boxes" width="370" />
+          <h2 class="categorie-title">Проект Boxes</h2>
+          <p class="categorie-name">Приложение</p>
+        </li>
+        <li class="categorie-item web">
+          <img
+            src="./images/web-site2.jpg"
+            alt="Веб-сайт Inspiration has no Borders"
+            width="370"
+          />
+          <h2 class="categorie-title">Inspiration has no Borders</h2>
+          <p class="categorie-name">Веб-сайт</p>
+        </li>
+        <li class="categorie-item des">
+          <img
+            src="./images/design2.jpg"
+            alt="Дизайн издания Limited Edition"
+            width="370"
+          />
+          <h2 class="categorie-title">Издание Limited Edition</h2>
+          <p class="categorie-name">Дизайн</p>
+        </li>
+        <li class="categorie-item mark">
+          <img
+            src="./images/marketing2.jpg"
+            alt="Маркетинговый проект"
+            width="370"
+          />
+          <h2 class="categorie-title">Проект LAB</h2>
+          <p class="categorie-name">Маркетинг</p>
+        </li>
+        <li class="categorie-item app">
+          <img
+            src="./images/apps3.jpg"
+            alt="Приложение Growing Business"
+            width="370"
+          />
+          <h2 class="categorie-title">Growing Business</h2>
+          <p class="categorie-name">Приложение</p>
+        </li>
+      </ul>
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-address">
+          <a href="./index.html" lang="en" class="logo footer-type"
+            ><span class="logo-blue">Web</span>Studio</a
+          >
+          <address class="address">
+            <ul class="address-list">
+              <li class="address-item">
+                <a
+                  href="https://goo.gl/maps/JpqHF6euzhfDJc6Z8"
+                  target="_blank"
+                  rel="noopener nofollow"
+                  class="location"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="address-item">
+                <a href="mailto:info@devstudio.com" class="footer-mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address-item">
+                <a href="tel:+380961111111" class="footer-phone"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-social">
+          <h3 class="social-title">присоединяйтесь</h3>
+          <ul class="footer-social-list">
+            <li class="footer-team-social-item">
+              <a class="footer-team-social-link" href="#">
+                <img
+                  src="./images/instagram.svg"
+                  alt="instagram"
+                  width="20"
+                  height="20"
+                  class="footer-social-image"
+                />
+              </a>
+            </li>
+            <li class="footer-team-social-item">
+              <a class="footer-team-social-link" href="#">
+                <img
+                  src="./images/twitter.svg"
+                  alt="instagram"
+                  width="20"
+                  height="20"
+                  class="footer-social-image"
+                />
+              </a>
+            </li>
+            <li class="footer-team-social-item">
+              <a class="footer-team-social-link" href="#">
+                <img
+                  src="./images/facebook.svg"
+                  alt="instagram"
+                  width="20"
+                  height="20"
+                  class="footer-social-image"
+                />
+              </a>
+            </li>
+            <li class="footer-team-social-item">
+              <a class="footer-team-social-link" href="#">
+                <img
+                  src="./images/linkedin.svg"
+                  alt="instagram"
+                  width="20"
+                  height="20"
+                  class="footer-social-image"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
