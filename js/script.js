@@ -125,16 +125,34 @@ filterApps.onclick = choiceFilterApps;
 filterDesign.onclick = choiceFilterDesign;
 filterMarketing.onclick = choiceFilterMarketing;
 
-let descripText = document.getElementsByClassName('description');
-let descriptionOpen = () => {
-    for (let j = 0; j < descripText.length; j++) {
-        descripText[j].style.display = 'inline-block';
-    }
-}
-let descriptionClose = () => {
-    for (let j = 0; j < descripText.length; j++) {
-        descripText[j].style.display = 'none';
-    }
-}
-choiceWeb[0].onmouseover = descriptionOpen;
-choiceWeb[0].onmouseout = descriptionClose;
+let descripText = [ document.getElementById('web0'), document.getElementById('des0'), document.getElementById('app0'),
+                     document.getElementById('mark0'), document.getElementById('app1'), document.getElementById('web1'),
+                     document.getElementById('des1'), document.getElementById('mark1'), document.getElementById('app2'),];
+                     
+function descriptionOpen(param) {
+    descripText[param].style.display = 'inline-block';
+};
+function descriptionClose(param) {
+    descripText[param].style.display = 'none';
+};
+
+choiceWeb[0].onmouseover = () => descriptionOpen(0);
+choiceWeb[0].onmouseout = () => descriptionClose(0);
+choiceDesign[0].onmouseover = () => descriptionOpen(1);
+choiceDesign[0].onmouseout = () =>  descriptionClose(1);
+choiceApps[0].onmouseover = () => descriptionOpen(2);
+choiceApps[0].onmouseout = () => descriptionClose(2);
+choiceMarketing[0].onmouseover = () => descriptionOpen(3);
+choiceMarketing[0].onmouseout = () => descriptionClose(3);
+choiceApps[1].onmouseover = () => descriptionOpen(4);
+choiceApps[1].onmouseout = () => descriptionClose(4);
+choiceWeb[1].onmouseover = () => descriptionOpen(5);
+choiceWeb[1].onmouseout = () => descriptionClose(5);
+choiceDesign[1].onmouseover = () => descriptionOpen(6);
+choiceDesign[1].onmouseout = () =>  descriptionClose(6);
+choiceMarketing[1].onmouseover = () => descriptionOpen(7);
+choiceMarketing[1].onmouseout = () => descriptionClose(7);
+choiceApps[2].onmouseover = () => descriptionOpen(8);
+choiceApps[2].onmouseout = () => descriptionClose(8);
+
+
