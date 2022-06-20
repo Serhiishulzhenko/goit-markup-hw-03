@@ -16,3 +16,17 @@ let modalClose = () => {
 
 btnBooked.onclick = modalOpen;
 btnBookedClose.onclick = modalClose;
+
+let btnMenuOpen = document.getElementById('btn-menu-open');
+let btnMenuClose = document.getElementById('btn-menu-close');
+let mobileMenuWind = document.getElementById('mobile-menu');
+
+const menuMobileOpen = () => {
+    mobileMenuWind.style.display = 'block';
+}
+const menuMobileClose = () => {
+    mobileMenuWind.style.display = 'none';
+}
+
+btnMenuOpen.onclick = menuMobileOpen;
+btnMenuClose.onclick = menuMobileClose;

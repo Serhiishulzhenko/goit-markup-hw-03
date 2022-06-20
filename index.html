@@ -19,6 +19,9 @@
       <a href="index.html" lang="en" class="logo"
         ><span class="logo-blue">Web</span>Studio</a
       >
+      <button type="button" class="btn-menu-open" id="btn-menu-open">
+        <img src="./images/menu-btn-open.svg" alt="open menu" />
+      </button>
       <nav class="nav">
         <ul class="nav_list">
           <li class="nav_item">
@@ -40,6 +43,48 @@
           <a href="tel:+380961111111" class="phone">+38 096 111 11 11</a>
         </li>
       </ul>
+      <div class="mobile-menu" id="mobile-menu">
+        <button type="button" class="btn-menu-close" id="btn-menu-close">
+          <img src="./images/close-modal.svg" alt="close" />
+        </button>
+        <nav class="nav-mobile">
+          <ul class="nav_list_mobile">
+            <li class="nav_item_mobile">
+              <a href="./index.html" class="sources current">Студия</a>
+            </li>
+            <li class="nav_item_mobile">
+              <a href="./portfolio.html" class="sources">Портфолио</a>
+            </li>
+            <li class="nav_item_mobile">
+              <a href="#" class="sources">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contact-info-mobile">
+          <li class="contact-item-mobile">
+            <a href="mailto:info@devstudio.com" class="mail"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="contact-item-mobile">
+            <a href="tel:+380961111111" class="phone">+38 096 111 11 11</a>
+          </li>
+        </ul>
+        <ul class="social-list-mobile">
+          <li class="team-social-item-mobile">
+            <a class="team-social-link-mobile" href="#">Instagram</a>
+          </li>
+          <li class="team-social-item-mobile">
+            <a class="team-social-link-mobile" href="#">Twitter</a>
+          </li>
+          <li class="team-social-item-mobile">
+            <a class="team-social-link-mobile" href="#">Facebook</a>
+          </li>
+          <li class="team-social-item-mobile">
+            <a class="team-social-link-mobile" href="#">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <div class="head-border"></div>
     <!--Main contect-->
@@ -226,6 +271,7 @@
                 alt="Product Designer"
                 width="270"
                 height="260"
+                class="team-item-img"
               />
               <h3 class="team-member">Игорь Демьяненко</h3>
               <p lang="en" class="team-position">Product Designer</p>
@@ -282,6 +328,7 @@
                 alt="Frontend Developer"
                 width="270"
                 height="260"
+                class="team-item-img"
               />
               <h3 class="team-member">Ольга Репина</h3>
               <p lang="en" class="team-position">Frontend Developer</p>
@@ -338,6 +385,7 @@
                 alt="Marketing"
                 width="270"
                 height="260"
+                class="team-item-img"
               />
               <h3 class="team-member">Николай Тарасов</h3>
               <p lang="en" class="team-position">Marketing</p>
@@ -394,6 +442,7 @@
                 alt="UI Designer"
                 width="270"
                 height="260"
+                class="team-item-img"
               />
               <h3 class="team-member">Михаил Ермаков</h3>
               <p lang="en" class="team-position">UI Designer</p>

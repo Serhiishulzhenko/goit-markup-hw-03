@@ -156,3 +156,16 @@ choiceApps[2].onmouseover = () => descriptionOpen(8);
 choiceApps[2].onmouseout = () => descriptionClose(8);
 
 
+let btnMenuOpen = document.getElementById('btn-menu-open');
+let btnMenuClose = document.getElementById('btn-menu-close');
+let mobileMenuWind = document.getElementById('mobile-menu');
+
+const menuMobileOpen = () => {
+    mobileMenuWind.style.display = 'block';
+}
+const menuMobileClose = () => {
+    mobileMenuWind.style.display = 'none';
+}
+
+btnMenuOpen.onclick = menuMobileOpen;
+btnMenuClose.onclick = menuMobileClose;
