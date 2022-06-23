@@ -43,11 +43,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         let formData = new FormData(form);
         formData.append('image', formImage.files[0]);
-        function removeCheckBox(input) {
-            if (input.getAttribute("type") === "checkbox") {
-                input.remove()
-            }
-        }
         if (error === 0) {
             fetch("/", {
                 method: "POST",
